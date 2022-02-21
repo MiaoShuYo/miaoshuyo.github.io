@@ -1,33 +1,40 @@
-title: Atlas Jekyll Theme
-desciption: >
-  A jekyll theme for personal website.
-email: yourusername@gmail.com
-baseurl: "/atlas-jekyll-theme" # the subpath of your site, e.g. /blog
-#replace nrdybhu1.github.io with your domainname.com
-url: "https://miaoshuyo.github.io" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  Jekyll
-markdown: kramdown
-page_excerpts: true
-favicon: "/img/atlas.png"
-collections:
-  posts:
-    permalink: "/blog/:title:output_ext"
-    output: true
-defaults:
-- scope:
-    path: _posts
-    type: posts
-- scope:
-    path: ''
-  values:
-    image: "/img/preview.png"
-plugins:
-- jekyll-avatar
-- jekyll-feed
-- jekyll-redirect-from
-- jemoji
-- jekyll-paginate
+# Site settings
+title:          Rain
+description:    "Rain is a simple and clean Jekyll theme with focus on content."
+url:            https://github.com/inelaah/rain
 
-paginate: 5
-paginate_path: "/blog/page-:num/"
+# Author
+author:
+  name:         Inela Avdic Hukic
+  email:        inelaah@gmail.com
+  url:          https://inelaah.com
+
+# Build settings
+markdown:       kramdown
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  # - jemoji #Uncomment this to allow emoji in your post
+
+# Permalinks
+permalink:      /:year-:month-:day/:title
+paginate:       5
+
+# Related posts settings
+related_posts_section:
+  max_count:        5
+  min_common_tags:  2
+
+# Links to social media
+social:
+  email: inelaah@gmail.com
+  github: https://github.com/inelaah
+  twitter: https://twitter.com
+  linkedin: https://ba.linkedin.com/in/inela-avdic-hukic-322354131
